@@ -18,7 +18,7 @@ Zero-config, multi-stack CLI tool to detect, report, and safely sweep unreferenc
 Run without installing globally using `npx`:
 
 ```bash
-npx asset-sweep --dry-run
+npx asset-sweep -d
 ```
 
 Or install globally:
@@ -62,7 +62,7 @@ npx asset-sweep --ci
 
 ```bash
 # 1. Safe preview in the current project
-npx asset-sweep --dry-run
+npx asset-sweep -d
 
 # 2. Interactive checklist (Space to toggle, Enter to confirm)
 npx asset-sweep
@@ -74,7 +74,7 @@ npx asset-sweep -y
 npx asset-sweep restore
 
 # 5. Permanently delete all unused assets (irreversible)
-npx asset-sweep -y --permanent
+npx asset-sweep -y -p
 
 # 6. Fail a CI build if unused assets exist
 npx asset-sweep --ci
