@@ -51,9 +51,9 @@ npx asset-sweep --ci
 | `--dir <dirs>` | Auto-detected | Comma-separated asset directories (e.g., `--dir public,src/assets`). |
 | `--ext <exts>` | Built-in list | Comma-separated asset extensions to scan (e.g., `--ext png,jpg,svg,webp`). |
 | `--extensionless` | `false` | Match filenames without extensions (for native catalogs or extensionless imports). |
-| `--dry-run` | `false` | Preview unused assets and reclaimable size without modifying any files. |
+| `-d, --dry-run` | `false` | Preview unused assets and reclaimable size without modifying any files. |
 | `-y, --yes` | `false` | Skip interactive confirmation and sweep all unused assets. |
-| `--permanent` | `false` | Permanently delete files instead of moving them to `.asset-sweep-trash/`. |
+| `-p, --permanent` | `false` | Permanently delete files instead of moving them to `.asset-sweep-trash/`. |
 | `--ci` | `false` | Output JSON (`{ stack, unusedCount, unused }`) and exit with code `1` if unused assets are found. |
 | `-h, --help` | — | Display CLI help. |
 | `-v, --version` | — | Display CLI version. |

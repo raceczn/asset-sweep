@@ -16,8 +16,8 @@ cli
   .option('--dir <dirs>', 'Comma-separated asset directories (overrides auto-detect)')
   .option('--ext <exts>', 'Comma-separated file extensions to scan')
   .option('--extensionless', 'Match filenames without file extensions', { default: false })
-  .option('--dry-run', 'Preview unused assets without deleting anything', { default: false })
-  .option('--permanent', 'Permanently delete files instead of moving to .asset-sweep-trash', { default: false })
+  .option('-d, --dry-run', 'Preview unused assets without deleting anything', { default: false })
+  .option('-p, --permanent', 'Permanently delete files instead of moving to .asset-sweep-trash', { default: false })
   .option('--ci', 'CI mode: outputs JSON and exits with code 1 if unused assets are found', { default: false })
   .option('-y, --yes', 'Skip interactive confirmation and sweep all unused assets', { default: false })
   .action(async (root = '.', options) => {
